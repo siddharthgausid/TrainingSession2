@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>User Registration</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h2>REGISTER NOW</h2>
+    </div>
+    <div class="form-container">
+      <h1>Registration Form</h1>
+      <form action="register.php" method="post">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter Name" required />
+        </div>
+        <div class="form-group">
+          <label for="userName">Username</label>
+          <input type="text" id="userName" name="userName" placeholder="Enter Username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-Enter Password" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter Contact Number" />
+        </div>
+        <div class="form-group full-width">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="form-group radio-group ">
+          <label for="gender">Gender</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" required />
+          <label for="other">Other</label>
+        </div>
+        <div class="form-group checkbox-group ">
+          <label>Hobbies</label>
+          <input type="checkbox" id="reading" name="hobbies" value="reading" />
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+          <label for="traveling">Traveling</label>
+          <input type="checkbox" id="cooking" name="hobbies" value="cooking" />
+          <label for="cooking">Cooking</label>
+          <input type="checkbox" id="other-hobby" name="hobbies" value="other" />
+          <label for="other-hobby">Other</label>
+        </div>
+        <div class="form-group ">
+          <label for="profile-picture">Profile Picture</label>
+          <input type="file" id="profile-picture" name="profile-picture" required />
+        </div>
+        <div class="form-group ">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="">Choose Country</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Enter relevant details." required></textarea>
+        </div>
+        <div class="form-group checkbox-group full-width">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I agree to all Terms and Conditions</label>
+        </div>
+        <div class="buttons">
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

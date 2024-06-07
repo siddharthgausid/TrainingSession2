@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    background-color: white;
+    margin: 20px;
+  }
+  
+  .left-section {
+    background: url('../bg-img.png');
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+  }
+  
+  .left-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    flex: 3;
+    padding: 40px;
+  
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form-group {
+    width: 48%;
+    
+  }
+  
+  .form-group.full-width {
+    width: 98%;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid gray;
+    font-size: 1em;
+  }
+  
+  .radio-group,
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-group label,
+  .checkbox-group label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
