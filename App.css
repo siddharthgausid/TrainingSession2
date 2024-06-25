@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.Container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Set a fixed width for the sidebar */
+  height: 100vh; /* Ensure the sidebar takes the full height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sidebar h2 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.grid-container {
+  display: flex;
+  height: 100vh; /* Ensure the sidebar takes the full height */
+  align-items: flex-start; /* Align content to the top */
+}
+
+.grid-item {
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 16px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 16px;
+}
+
+legend {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
